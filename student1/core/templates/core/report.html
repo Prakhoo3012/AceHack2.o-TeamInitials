@@ -1,0 +1,83 @@
+{% extends 'core/navbar.html' %}
+{% load static %}
+
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./static/core/result.css">
+
+    <style>
+        table {
+            font-family: arial, sans-serif;
+            border-collapse: collapse;
+            width: 100%;
+        }
+
+        td,
+        th {
+            border: 1px solid #dddddd;
+            text-align: left;
+            padding: 8px;
+        }
+
+        tr:nth-child(even) {
+            background-color: #dddddd;
+        }
+    </style>
+</head>
+
+<body>
+    {% block body %}
+    <div class="center">
+        <div class="book">
+            <table>
+                {% for b in bacha %}
+                    <tr>
+                        <th>{{ b.first_name }} {{ b.last_name }} {{ b.roll_no }}</th>
+                    </tr>
+                {% endfor %}
+                <tr>
+                    <th>Subject</th>
+                    <th>Marks</th>
+                </tr>
+                {% for sub in sub %}
+                    <tr>
+                        <td>
+                            {{ sub.subject }}
+                        </td>
+                        <td>
+                            {{ sub.mark }}
+                        </td>
+                    </tr>
+                {% endfor %}
+                    <tr>
+                        <th>Total Score</th>
+                        <th>{{ t }}</th>
+                    </tr>
+                    <tr>
+                        <th>Percentage</th>
+                        <th>{{ per }}</th>
+                    </tr>
+                    <tr>
+                        <th>Grade</th>
+                        <th>{{ grade }}</th>
+                    </tr>
+            </table>
+
+            <!-- <h4>Total Score: {{ t }}</h4>
+            <h2>Percentage: {{ per }}</h2>
+            <h3>Grade: {{ grade }} </h3> -->
+
+            <div class="cover">
+                <p>Report Card</p>
+            </div>
+        </div>
+    </div>
+    {% endblock %}
+</body>
+
+</html>

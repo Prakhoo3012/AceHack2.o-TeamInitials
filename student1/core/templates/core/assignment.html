@@ -1,0 +1,8 @@
+{% extends 'core/navbar.html' %}
+    {% block body %}
+        <form action="{% url 'core:assignment' %}">
+            <input type="text" name="name" placeholder="subject">
+            <input type="file" name="content" placeholder="Upload your work">
+            <input type="submit" value="submit">
+        </form>
+    {% endblock %}

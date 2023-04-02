@@ -1,0 +1,52 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./static/core/cards.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <title>Document</title>
+</head>
+
+<body style="background:url(./static/core/images/gradient.jpg)">
+    <nav class="navbar navbar-light">
+        <a class="navbar-brand" href="{% url 'core:index' %}">
+            <i class="fa-sharp fa-solid fa-arrow-left" style="size: 22px"></i>
+        </a>
+    </nav>
+    <h1 id="sign-title" style="font-family: 'Kalam', cursive;">TEAM INITIALS</h1>
+    <div class="cardcenter">
+        <div class="cardsallign ">
+            <div class="cards cardx animate__animated animate__fadeInUp ">
+                <div class="thumbnail">
+                    <img src="./static/core/images/student.gif" onclick="myfunc1()" width="100%" alt="loading ...">
+                </div>
+                <div class="points">
+                    <h2 id="ch2"><br>STUDENTS</h2>
+                </div>
+            </div>
+            <div class="cards  animate__animated animate__fadeInUp">
+                <div class="thumbnail">
+                    <img src="./static/core/images/teacher.gif" onclick="myfunc2()" width="100%" alt="loading ...">
+                </div>
+                <div class="points">
+                    <h2 id="ch2"><br>TEACHER</h2>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+</body>
+<script src="https://kit.fontawesome.com/5482c79e6d.js" crossorigin="anonymous"></script>
+<script>
+    function myfunc1(){
+        window.location.href='login';
+    }
+    function myfunc2(){
+        window.location.href='login';
+    }
+</script> 
+</html>

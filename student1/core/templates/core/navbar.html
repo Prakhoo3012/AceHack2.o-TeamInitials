@@ -1,0 +1,156 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Student Management Dashboard</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-aFq/bzH65dt+w6FI2ooMVUpc+21e0SRygnTpmBvdBgSdnuTN7QbdgL+OapgHtvPp" crossorigin="anonymous">
+    <link rel="stylesheet" href="./static/core/sidebar.css">
+    <link rel="stylesheet" href="./static/core/result.css">
+
+  </head>
+  <body>
+    <nav>
+        <div class="bar" height="30px">
+            <nav class="navbar">
+                <div class="container-fluid">
+                  <a class="navbar-brand" href="{% url 'core:index' %}" style="margin-left: 240px; color: white; text-decoration: solid;">TeamInitials</a>
+                </div>
+                <div class="dropdown text-end" style="position:absolute; right:120px">
+                    <a href="#" class="d-block link-dark text-decoration-none dropdown-toggle" id="dropdownUser1" data-bs-toggle="dropdown" aria-expanded="false">
+                      <img src="https://avatars.githubusercontent.com/u/111530884?v=4" alt="logo" width="32" height="32" class="rounded-circle" style="z-index: 7;">
+                    </a>
+                    <ul class="dropdown-menu text-small" aria-labelledby="dropdownUser1">
+                      <!-- <li><a class="dropdown-item" href="#">New project...</a></li> -->
+                      <li><a class="dropdown-item" href="#">Settings</a></li>
+                      <li><a class="dropdown-item" href="{% url 'core:navbar' %}">Profile</a></li>
+                      <li><hr class="dropdown-divider"></li>
+                      <li><a class="dropdown-item" href="{% url 'core:logout' %}">Sign out</a></li>
+                    </ul>
+                </div>
+              </nav>
+              
+        </div>
+    </nav>
+    
+    <div class="area"></div>
+    <nav class="main-menu">
+        <ul>
+            <li>
+                <a href="https://jbfarrow.com" class="pada">
+                    <i class="fa fa-home fa-2x"></i>
+                    <span class="nav-text" style="font-family: 'Kalam', cursive;">
+                        Dashboard
+                    </span>
+                </a>
+
+            </li>
+            <li class="has-subnav">
+                <a href="{% url 'core:timetable' %}">
+                    <i class="fa fa-globe fa-2x"></i>
+                    <span class="nav-text" style="font-family: 'Kalam', cursive;">
+                        Time Table
+                    </span>
+                </a>
+
+            </li>
+            <li class="has-subnav">
+                <a href="{% url 'core:add' %}">
+                    <i class="fa fa-comments fa-2x"></i>
+                    <span class="nav-text" style="font-family: 'Kalam', cursive;">
+                        Attendance
+                    </span>
+                </a>
+
+            </li>
+            <li class="has-subnav">
+                <a href="{% url 'core:info' %}">
+                    <i class="fa fa-camera-retro fa-2x"></i>
+                    <span class="nav-text" style="font-family: 'Kalam', cursive;">
+                        Personal Info
+                    </span>
+                </a>
+
+            </li>
+            <li>
+                <a href="{% url 'core:result' %}">
+                    <i class="fa fa-film fa-2x"></i>
+                    <span class="nav-text" style="font-family: 'Kalam', cursive;">
+                        Report 
+                    </span>
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <i class="fa fa-book fa-2x"></i>
+                    <span class="nav-text" style="font-family: 'Kalam', cursive;">
+                        Details
+                    </span>
+                </a>
+            </li>
+            <li>
+                <a href="{% url 'core:assignment' %}">
+                    <i class="fa fa-book fa-2x"></i>
+                    <span class="nav-text" style="font-family: 'Kalam', cursive;">
+                        Assessment System
+                    </span>
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <i class="fa fa-book fa-2x"></i>
+                    <span class="nav-text" style="font-family: 'Kalam', cursive;">
+                        Documentations
+                    </span>
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <i class="fa fa-book fa-2x"></i>
+                    <span class="nav-text" style="font-family: 'Kalam', cursive;">
+                        Co-Curricular
+                    </span>
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <i class="fa fa-book fa-2x"></i>
+                    <span class="nav-text" style="font-family: 'Kalam', cursive;">
+                        average
+                    </span>
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <i class="fa fa-info fa-2x"></i>
+                    <span class="nav-text" style="font-family: 'Kalam', cursive;">
+                        Assignment
+                    </span>
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <i class="fa fa-info fa-2x"></i>
+                    <span class="nav-text" style="font-family: 'Kalam', cursive;">
+                        Fees Assessment
+                    </span>
+                </a>
+            </li>
+        </ul>
+
+        <ul class="logout">
+            <li>
+                <a href="{% url 'core:logout' %}">
+                    <i class="fa fa-power-off fa-2x"></i>
+                    <span class="nav-text">
+                        Logout
+                    </span>
+                </a>
+            </li>
+        </ul>
+    </nav>
+    {% block body %}
+    {% endblock %}
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/js/bootstrap.bundle.min.js" integrity="sha384-qKXV1j0HvMUeCBQ+QVp7JcfGl760yU08IQ+GpUo5hlbpg51QRiuqHAJz8+BrxE/N" crossorigin="anonymous"></script>
+  </body>
+</html>

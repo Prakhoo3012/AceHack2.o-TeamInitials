@@ -1,0 +1,23 @@
+{% extends 'core/layout.html' %}
+
+{% block body %}
+<form action="{% url 'core:see' %}" mthod="get">
+    <div class="form-check">
+        <select class="form-control" name="title">
+            {% for sub in q %}
+                <option>{{ sub }}</option>
+            {% endfor %}
+        </select>
+    </div>
+    <div>
+        <label for="">Marks</label>
+        <input type="number" name="mark" placeholder="Marks">
+    </div>
+    <button type="submit" class="btn btn-primary mb-2">Edit Entry</button>
+  </form>
+
+    {% if message %}
+        <h1>{{ message }}</h1>
+    {% endif %}
+
+{% endblock %}

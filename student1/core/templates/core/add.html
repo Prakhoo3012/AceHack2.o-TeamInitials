@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form action="{% url 'core:add_atten' %}" mthod="get">
+        {% csrf_token %}
+        <div class="form-check">
+            <label for="">Select entry you want to edit</label>
+            <select class="form-control" name="title">
+                {% for class in classes %}
+                    <option>{{ class.standard }}</option>
+                {% endfor %}
+            </select>
+        </div>
+        <button type="submit" class="btn btn-primary mb-2">Edit Entry</button>
+      </form>
+</body>
+</html>

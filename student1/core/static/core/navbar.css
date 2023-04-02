@@ -1,0 +1,35 @@
+html{font-size: 62.5%;}
+.navbar ul li a{
+    list-style: none;
+    text-decoration: none;
+    color: grey;
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.7rem;
+}
+.navbar ul li a:hover{
+    color:black;
+    transition-delay: 0.1s;
+    border-bottom: 3px #01BAEF solid;
+}
+.navbar ul li{
+    list-style: none;
+    padding: 5.42rem 0em 4.5rem 0em;
+}
+.nav-menu{
+    overflow: scroll;
+    scroll-behavior: auto;
+    display: flex;
+    flex-direction: column;
+}
+
+nav{
+    display: flex;
+    flex-direction: row;
+    background-color: whitesmoke;
+}
+.navbar{
+    display: flex;
+    align-items: center;
+    border-right: 2px solid #7400FF;
+    height: 40px;
+}

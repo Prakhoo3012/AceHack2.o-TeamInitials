@@ -1,0 +1,315 @@
+@import url(//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css);
+
+@import url(https://fonts.googleapis.com/css?family=Titillium+Web:300);
+.fa-2x {
+font-size: 2em;
+}
+.fa {
+position: relative;
+display: table-cell;
+width: 60px;
+height: 36px;
+text-align: center;
+vertical-align: middle;
+font-size:20px;
+}
+
+
+.main-menu:hover,nav.main-menu.expanded {
+width:250px;
+overflow:visible;
+}
+
+.main-menu {
+background:#7400FF;
+position:absolute;
+top:0;
+bottom:0;
+height:100%;
+left:0;
+width:60px;
+overflow:hidden;
+-webkit-transition:width .05s linear;
+transition:width .05s linear;
+z-index:1000;
+}
+
+.main-menu>ul {
+margin:7px 0;
+}
+
+.main-menu li {
+position:relative;
+display:block;
+width:250px;
+}
+.main-menu ul li a{
+  margin-top: 12px;
+}
+.main-menu ul li .pada{
+  margin-top: 3rem;
+}
+.main-menu li>a {
+position:relative;
+display:table;
+border-collapse:collapse;
+border-spacing:0;
+color:#FFFFFF;
+ font-family: arial;
+font-size: 14px;
+text-decoration:none;
+-webkit-transition:all .1s linear;
+transition:all .1s linear;
+  
+}
+
+.main-menu .nav-icon {
+position:relative;
+display:table-cell;
+width:60px;
+height:36px;
+text-align:center;
+vertical-align:middle;
+font-size:18px;
+}
+
+.main-menu .nav-text {
+position:relative;
+display:table-cell;
+vertical-align:middle;
+width:190px;
+  font-family: 'Titillium Web', sans-serif;
+}
+
+.main-menu>ul.logout {
+position:absolute;
+left:0;
+bottom:0;
+}
+
+.no-touch .scrollable.hover {
+overflow-y:hidden;
+}
+
+.no-touch .scrollable.hover:hover {
+overflow-y:auto;
+overflow:visible;
+}
+
+a:hover,a:focus {
+text-decoration:none;
+}
+
+nav {
+-webkit-user-select:none;
+-moz-user-select:none;
+-ms-user-select:none;
+-o-user-select:none;
+user-select:none;
+}
+
+nav ul,nav li {
+outline:0;
+margin:0;
+padding:0;
+}
+.main-menu li:hover>a,nav.main-menu li.active>a,.dropdown-menu>li>a:hover,.dropdown-menu>li>a:focus,.dropdown-menu>.active>a,.dropdown-menu>.active>a:hover,.dropdown-menu>.active>a:focus,.no-touch .dashboard-page nav.dashboard-menu ul li:hover a,.dashboard-page nav.dashboard-menu ul li.active a {
+color:#fff;
+background-color:#000000;
+}
+.area {
+float: left;
+background: #e2e2e2;
+width: 100%;
+height: 100%;
+}
+@font-face {
+  font-family: 'Titillium Web';
+  font-style: normal;
+  font-weight: 300;
+  src: local('Titillium WebLight'), local('TitilliumWeb-Light'), url(http://themes.googleusercontent.com/static/fonts/titilliumweb/v2/anMUvcNT0H1YN4FII8wpr24bNCNEoFTpS2BTjF6FB5E.woff) format('woff');
+}
+
+.bar h1{
+  display: flex;
+  margin: auto;
+  padding-left: 70px;
+  justify-content: left;
+  position:relative ;
+  top:15px;
+  color: #FFFFFF;
+  font-family: 'Kalam', cursive;
+  font-size: x-large;
+}
+
+.bar{
+  background-color: #7400FF;
+  height: 60px;
+  position: relative;
+  top: -10px;
+}
+.hund{
+  display: flex;
+  flex-direction: row;
+  margin-left: 248px;
+}
+.fifty{
+  width: 50%;
+}
+.hund .tfive{
+  display: flex;
+  flex-direction: column;
+  height: 60%;
+}
+
+/* cards */
+
+.cards {
+  overflow: hidden;
+  display: grid;
+  background-color: white;
+  width: 300px;
+  height: 350px;
+  box-shadow: 0px 0px 10px #7400FF;
+  margin-left: 30px;
+  border-radius: 12px;
+
+}
+
+.cards:hover {
+  box-shadow: 0px 0px 50px #7400FF;
+}
+
+.cards p {
+  display: flex;
+  text-align: center;
+  font-family: 'Pacifico', cursive;
+}
+
+.cards .points #ch2 {
+  margin-top: -8px;
+  text-align: center;
+  font-family: 'Montserrat', sans-serif;
+
+}
+
+#ch6 {
+  padding: 25px;
+  font-size: 12.5px;
+}
+
+.cards .thumbnail img {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 12px;
+  margin: auto;
+  padding: auto;
+  z-index: 1;
+  height: 270px;
+}
+
+.cards .thumbnail img:hover {
+  opacity: 30%;
+  width: 300px;
+  height: 350px;
+  position: absolute;
+  transition: smooth;
+}
+
+.cardsallign {
+  row-gap: 2rem;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: space-evenly;
+  margin: 80px;
+}
+
+.points h6 {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 2rem;
+}
+
+
+.points {
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  display: flex;
+  height: 100%;
+  flex-direction: column;
+  overflow: hidden;
+}
+
+@media(max-width: 530px) {
+  .thumbnail.hover {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      border-radius: 12px;
+      margin: auto;
+      padding: auto;
+      z-index: 1;
+      height: 270px;
+  }
+}
+.fifty .cards{
+  height: 450px;
+}
+.fifty .cards .thumbnail img{
+  height: 350px;
+}
+.fifty .cards .thumbnail img:hover{
+  height: 450px;
+}
+.fifty .tfive .cards{
+  width: 500px;
+  height: 250px;
+}
+.fifty .tfive .cards .thumbnail img{
+  height: 250px;
+}
+.fifty .tfive .cards .thumbnail img:hover{
+  height: 260px;
+  width: 500px;
+}
+
+.try{
+  margin-top: 2rem;
+}
+/* .cards .thumbnail img:hover {
+  opacity: 30%;
+  width: 300px;
+  height: 350px;
+  position: absolute;
+  transition: smooth;
+}
+ */
+footer{
+  display: flex;
+  flex-direction: row;
+  margin-top: 4rem;
+  background-color: #7400FF;
+  width: 98.9vw;
+  height: 4rem;
+  position: relative;
+  left: -8px;
+  top: 8px;
+}
+footer .members li{
+  display: flex;
+  flex-direction: row;
+  list-style: none;
+  justify-content: space-evenly;
+}
+footer .members li h3{
+  padding-left: 6rem;
+  color: white;
+  font-family: 'Kalam', cursive;
+}
+footer .team{
+  display: flex;
+  margin-left: 30%;
+  color: white;
+  font-family: 'Kalam', cursive;
+}

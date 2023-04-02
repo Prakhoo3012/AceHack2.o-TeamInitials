@@ -1,0 +1,122 @@
+
+/* cards */
+html{
+    font-size: 62.5%;
+}
+.cardcenter{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.cards {
+    overflow: hidden;
+    display: grid;
+    background-color: white;
+    width: 30rem;
+    height: 35rem;
+    box-shadow: 0rem 0rem 1rem rgb(116,0,255);
+    border: 2px solid rgb(116,0,255);
+    margin-left: 3rem;
+    border-radius: 1.2rem;
+
+}
+
+.cards:hover {
+    box-shadow: 0rem 0rem 5rem rgb(116,0,255);
+    ;
+}
+
+.cards p {
+    display: flex;
+    text-align: center;
+    font-family: 'Pacifico', cursive;
+}
+
+.cards .points #ch2 {
+    margin-top: -.8rem;
+    text-align: center;
+    font-family: 'Montserrat', sans-serif;
+
+}
+
+#ch6 {
+    padding: 25rem;
+    font-size: 1.25rem;
+}
+
+.cards .thumbnail img {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 12px;
+    margin: auto;
+    padding: auto;
+    z-index: 1;
+    height: 27rem;
+}
+
+/* .cards .thumbnail img:hover {
+    opacity: 30%;
+    width: 30rem;
+    height: 35rem;
+    position: absolute;
+    transition: smooth;
+} */
+
+.cardx{
+    margin-right: 20rem;
+}
+
+.cardsallign {
+    row-gap: 2rem;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-evenly;
+    margin: 8rem;
+    padding: 5.7rem;
+}
+
+.points h6 {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 2rem;
+}
+
+
+.points {
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    display: flex;
+    height: 100%;
+    flex-direction: column;
+    overflow: hidden;
+}
+#sign-title{
+    text-align: center;
+    font-size: 5rem;
+}
+#sign-subtitle{
+    text-align: center;
+    font-size: 5rem;
+}
+
+.cardcenter .cardsallign .newcc{
+    display: flex;
+    height:600px;
+    width: 700px;
+}
+
+/* @media(max-width: 530px) {
+    .thumbnail.hover {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 1.2rem;
+        margin: auto;
+        padding: auto;
+        z-index: 1;
+        height: 27rem;
+    }
+} */
+
+/* animated background */
